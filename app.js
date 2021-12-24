@@ -47,6 +47,12 @@ app.get("/post", (req, res) => {
   res.render("post");
 });
 
+app.get("/posts/:id", async (req, res) => {
+  const post = await Post.findById(req.params.id);
+  console.log(post);
+  res.render("post", { post });
+});
+
 app.listen(PORT, () => {
   console.log(`${PORT} portundan gelen istekler dinleniyor`);
 });
