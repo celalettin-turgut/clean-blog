@@ -19,7 +19,8 @@
   "homepage": "https://github.com/celalettin-turgut/clean-blog#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^6.1.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
